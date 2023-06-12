@@ -1,0 +1,163 @@
+{
+  "version": "eosio::abi/1.2",
+  "structs": [
+    {
+      "name": "AssetsTable",
+      "base": "",
+      "fields": [
+        {
+          "name": "assetKey",
+          "type": "uint64"
+        },
+        {
+          "name": "assetId",
+          "type": "uint64"
+        },
+        {
+          "name": "templateId",
+          "type": "uint64"
+        }
+      ]
+    },
+    {
+      "name": "AtomicFormat",
+      "base": "",
+      "fields": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "type",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "ExtendedSymbol",
+      "base": "",
+      "fields": [
+        {
+          "name": "sym",
+          "type": "symbol"
+        },
+        {
+          "name": "contract",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "name": "LootsTable",
+      "base": "",
+      "fields": [
+        {
+          "name": "loot_name",
+          "type": "name"
+        },
+        {
+          "name": "owner",
+          "type": "name"
+        },
+        {
+          "name": "available_count",
+          "type": "uint32"
+        },
+        {
+          "name": "unit_price",
+          "type": "asset"
+        }
+      ]
+    },
+    {
+      "name": "loot.reg",
+      "base": "",
+      "fields": [
+        {
+          "name": "owner",
+          "type": "name"
+        },
+        {
+          "name": "loot",
+          "type": "name"
+        }
+      ]
+    },
+    {
+      "name": "loot.updt",
+      "base": "",
+      "fields": [
+        {
+          "name": "owner",
+          "type": "name"
+        },
+        {
+          "name": "loot",
+          "type": "name"
+        }
+      ]
+    }
+  ],
+  "types": [],
+  "actions": [
+    {
+      "name": "loot.reg",
+      "type": "loot.reg",
+      "ricardian_contract": ""
+    },
+    {
+      "name": "loot.updt",
+      "type": "loot.updt",
+      "ricardian_contract": ""
+    }
+  ],
+  "tables": [
+    {
+      "name": "assets2",
+      "type": "AssetsTable",
+      "index_type": "i64",
+      "key_names": [],
+      "key_types": []
+    },
+    {
+      "name": "loots4",
+      "type": "LootsTable",
+      "index_type": "i64",
+      "key_names": [],
+      "key_types": []
+    }
+  ],
+  "ricardian_clauses": [],
+  "variants": [
+    {
+      "name": "AtomicValue",
+      "types": [
+        "int8",
+        "int16",
+        "int32",
+        "int64",
+        "uint8",
+        "uint16",
+        "uint32",
+        "uint64",
+        "float32",
+        "float64",
+        "string",
+        "int8[]",
+        "int16[]",
+        "int32[]",
+        "int64[]",
+        "bytes",
+        "uint16[]",
+        "uint32[]",
+        "uint64[]",
+        "float32[]",
+        "float64[]",
+        "string[]"
+      ]
+    }
+  ],
+  "action_results": [],
+  "abi_extensions": [],
+  "error_messages": []
+}
